@@ -1,6 +1,9 @@
+'use client';
+
 import * as React from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { cn } from '@/lib/utils';
+
 import { MaskTextReveal } from '@/components/ui/mask-text-reveal';
 import OrbitBorderButton from '@/components/ui/orbit-border-button';
 
