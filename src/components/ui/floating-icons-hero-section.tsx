@@ -1,4 +1,5 @@
 'use client';
+import { TextEffect } from '@/components/core/text-effect';
 
 import * as React from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
@@ -150,9 +151,9 @@ export function FloatingIconsHero({
           direction="bottom-to-top"
         />
 
-        <p className="text-sm sm:text-lg text-[#5c7070] leading-relaxed font-body max-w-2xl mx-auto font-normal">
+        <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-sm sm:text-lg text-[#5c7070] leading-relaxed font-body max-w-2xl mx-auto font-normal">
           {subtitle}
-        </p>
+        </TextEffect>
 
         <div className="pt-3 sm:pt-4 flex justify-center gap-4 font-body">
           <OrbitBorderButton

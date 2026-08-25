@@ -1,4 +1,5 @@
 "use client";
+import { TextEffect } from '@/components/core/text-effect';
 
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle2 } from "lucide-react";
@@ -18,12 +19,12 @@ export default function ConnectSection() {
           <span className="inline-block px-3.5 py-1 rounded-full bg-[#dcfce7] text-[#065f46] text-xs font-bold uppercase tracking-wider font-body">
             Contact & Admissions
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#064e3b] font-heading tracking-tight">
+          <TextEffect as="h2" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-3xl md:text-4xl font-bold text-[#064e3b] font-heading tracking-tight">
             Connect with Nabi Crescent Matriculation School
-          </h2>
-          <p className="text-base text-slate-600 font-body">
+          </TextEffect>
+          <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-base text-slate-600 font-body">
             Have questions about admissions, fees, or campus visits? Reach out to our admissions team today.
-          </p>
+          </TextEffect>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 items-start">
@@ -36,8 +37,8 @@ export default function ConnectSection() {
                 <MapPin className="w-5 h-5" />
               </div>
               <div className="min-w-0 flex-1">
-                <h4 className="font-bold text-[#064e3b] text-sm font-heading">Campus Address</h4>
-                <p className="text-xs text-slate-600 mt-1 leading-relaxed break-words">Crescent Nagar, Avadi, Chennai - 600054</p>
+                <TextEffect as="h4" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="font-bold text-[#064e3b] text-sm font-heading">Campus Address</TextEffect>
+                <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-xs text-slate-600 mt-1 leading-relaxed break-words">Crescent Nagar, Avadi, Chennai - 600054</TextEffect>
               </div>
             </div>
 
@@ -47,8 +48,8 @@ export default function ConnectSection() {
                 <Phone className="w-5 h-5" />
               </div>
               <div className="min-w-0 flex-1">
-                <h4 className="font-bold text-[#064e3b] text-sm font-heading">Phone Enquiries</h4>
-                <p className="text-xs text-slate-600 mt-1 break-words">+91 98404 33445 (Admissions Desk)</p>
+                <TextEffect as="h4" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="font-bold text-[#064e3b] text-sm font-heading">Phone Enquiries</TextEffect>
+                <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-xs text-slate-600 mt-1 break-words">+91 98404 33445 (Admissions Desk)</TextEffect>
               </div>
             </div>
 
@@ -58,8 +59,8 @@ export default function ConnectSection() {
                 <Mail className="w-5 h-5" />
               </div>
               <div className="min-w-0 flex-1">
-                <h4 className="font-bold text-[#064e3b] text-sm font-heading">Email Us</h4>
-                <p className="text-xs text-slate-600 mt-1 break-all">admissions@nabicrescentmatriculationschool.edu.in</p>
+                <TextEffect as="h4" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="font-bold text-[#064e3b] text-sm font-heading">Email Us</TextEffect>
+                <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-xs text-slate-600 mt-1 break-all">admissions@nabicrescentmatriculationschool.edu.in</TextEffect>
               </div>
             </div>
 
@@ -69,8 +70,8 @@ export default function ConnectSection() {
                 <Clock className="w-5 h-5" />
               </div>
               <div className="min-w-0 flex-1">
-                <h4 className="font-bold text-[#064e3b] text-sm font-heading">Office Hours</h4>
-                <p className="text-xs text-slate-600 mt-1 break-words">Monday – Saturday: 8:30 AM – 4:00 PM</p>
+                <TextEffect as="h4" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="font-bold text-[#064e3b] text-sm font-heading">Office Hours</TextEffect>
+                <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-xs text-slate-600 mt-1 break-words">Monday – Saturday: 8:30 AM – 4:00 PM</TextEffect>
               </div>
             </div>
 
@@ -79,12 +80,12 @@ export default function ConnectSection() {
           {/* Form & Map Column */}
           <div className="lg:col-span-2 space-y-6">
             <div className="p-8 rounded-2xl bg-white border border-[#dcfce7] shadow-sm font-body">
-              <h3 className="text-xl font-bold text-[#064e3b] font-heading mb-6">Send Quick Admission Inquiry</h3>
+              <TextEffect as="h3" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-xl font-bold text-[#064e3b] font-heading mb-6">Send Quick Admission Inquiry</TextEffect>
               {submitted ? (
                 <div className="p-6 rounded-2xl bg-[#dcfce7] text-[#065f46] text-center space-y-2">
                   <CheckCircle2 className="w-8 h-8 mx-auto text-[#065f46]" />
-                  <p className="font-bold text-base font-heading">Thank You!</p>
-                  <p className="text-sm">Your inquiry has been received. Our admissions office will call you shortly.</p>
+                  <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="font-bold text-base font-heading">Thank You!</TextEffect>
+                  <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-sm">Your inquiry has been received. Our admissions office will call you shortly.</TextEffect>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">

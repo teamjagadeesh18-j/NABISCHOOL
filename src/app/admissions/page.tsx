@@ -1,4 +1,5 @@
 "use client";
+import { TextEffect } from '@/components/core/text-effect';
 
 import { BreadcrumbSchema } from '@/components/ui/breadcrumb-schema';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
@@ -72,12 +73,12 @@ export default function DedicatedApplyNowPage() {
           <span className="inline-block px-4 py-1.5 rounded-full bg-[#004d40] text-white text-xs font-bold uppercase tracking-wider shadow-sm">
             ADMISSIONS OPEN • LKG TO CLASS 10
           </span>
-          <h1 className="text-3xl md:text-5xl font-bold font-heading text-white">
+          <TextEffect as="h1" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-3xl md:text-5xl font-bold font-heading text-white">
             Online Admission Application
-          </h1>
-          <p className="text-base md:text-lg text-[#94a3b8] max-w-2xl mx-auto leading-relaxed">
+          </TextEffect>
+          <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-base md:text-lg text-[#94a3b8] max-w-2xl mx-auto leading-relaxed">
             Join Nabi Crescent Matriculation School, Arundhati Palaiyam, Avadi. Apply online for Matriculation High School (LKG to Class 10).
-          </p>
+          </TextEffect>
         </div>
       </section>
 
@@ -92,7 +93,7 @@ export default function DedicatedApplyNowPage() {
         {/* 3-Step Easy Admission Process Card */}
         <div className="bg-[#0f172a] text-white p-8 md:p-10 rounded-3xl border border-[#334155] shadow-xl space-y-6">
           <span className="text-xs font-bold uppercase tracking-wider text-[#004d40]">ADMISSION GUIDELINES</span>
-          <h2 className="text-2xl font-bold text-white font-heading">3-Step Easy Admission Process</h2>
+          <TextEffect as="h2" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-2xl font-bold text-white font-heading">3-Step Easy Admission Process</TextEffect>
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="flex items-start gap-4">
@@ -100,8 +101,8 @@ export default function DedicatedApplyNowPage() {
                 1
               </div>
               <div>
-                <h3 className="font-bold text-sm text-white">Submit Online Form</h3>
-                <p className="text-xs text-[#94a3b8] mt-1 leading-relaxed">Fill in student and parent details on this portal.</p>
+                <TextEffect as="h3" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="font-bold text-sm text-white">Submit Online Form</TextEffect>
+                <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-xs text-[#94a3b8] mt-1 leading-relaxed">Fill in student and parent details on this portal.</TextEffect>
               </div>
             </div>
 
@@ -110,8 +111,8 @@ export default function DedicatedApplyNowPage() {
                 2
               </div>
               <div>
-                <h3 className="font-bold text-sm text-white">Campus Visit & Interaction</h3>
-                <p className="text-xs text-[#94a3b8] mt-1 leading-relaxed">Visit our admissions office for brief interaction and document review.</p>
+                <TextEffect as="h3" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="font-bold text-sm text-white">Campus Visit & Interaction</TextEffect>
+                <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-xs text-[#94a3b8] mt-1 leading-relaxed">Visit our admissions office for brief interaction and document review.</TextEffect>
               </div>
             </div>
 
@@ -120,8 +121,8 @@ export default function DedicatedApplyNowPage() {
                 3
               </div>
               <div>
-                <h3 className="font-bold text-sm text-white">Fee Payment & Confirmation</h3>
-                <p className="text-xs text-[#94a3b8] mt-1 leading-relaxed">Complete deposit and receive official admission confirmation pack.</p>
+                <TextEffect as="h3" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="font-bold text-sm text-white">Fee Payment & Confirmation</TextEffect>
+                <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-xs text-[#94a3b8] mt-1 leading-relaxed">Complete deposit and receive official admission confirmation pack.</TextEffect>
               </div>
             </div>
           </div>
@@ -145,7 +146,7 @@ export default function DedicatedApplyNowPage() {
         <div className="bg-white p-6 md:p-8 rounded-3xl border border-[#e2e8f0] shadow-sm space-y-4">
           <div className="flex items-center gap-2">
             <FileCheck className="w-5 h-5 text-[#004d40]" />
-            <h3 className="font-bold text-base text-[#0f172a] font-heading">Required Documents</h3>
+            <TextEffect as="h3" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="font-bold text-base text-[#0f172a] font-heading">Required Documents</TextEffect>
           </div>
 
           <div className="grid sm:grid-cols-2 gap-3 text-xs text-[#475569]">
@@ -171,17 +172,17 @@ export default function DedicatedApplyNowPage() {
         {/* Full Student Admission Form */}
         <div className="bg-white p-8 md:p-12 rounded-3xl border border-[#e2e8f0] shadow-md space-y-8">
           <div>
-            <h2 className="text-2xl font-bold text-[#0f172a] font-heading">Student Admission Form</h2>
-            <p className="text-xs text-[#64748b] mt-1">Please provide accurate information for quick verification.</p>
+            <TextEffect as="h2" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-2xl font-bold text-[#0f172a] font-heading">Student Admission Form</TextEffect>
+            <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-xs text-[#64748b] mt-1">Please provide accurate information for quick verification.</TextEffect>
           </div>
 
           {submitted ? (
             <div className="p-8 bg-[#f0fdf4] border border-[#bbf7d0] rounded-2xl text-center space-y-4">
               <CheckCircle2 className="w-12 h-12 text-[#16a34a] mx-auto" />
-              <h3 className="text-2xl font-bold text-[#15803d]">Application Redirected to WhatsApp!</h3>
-              <p className="text-xs text-[#166534] max-w-md mx-auto">
+              <TextEffect as="h3" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-2xl font-bold text-[#15803d]">Application Redirected to WhatsApp!</TextEffect>
+              <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-xs text-[#166534] max-w-md mx-auto">
                 All details for <strong>${formData.studentName}</strong> have been formatted and opened directly in WhatsApp with <strong>+91 44 4378 0320</strong>. If WhatsApp did not open automatically, click the button below.
-              </p>
+              </TextEffect>
               <div className="pt-2">
                 <button 
                   onClick={() => {
@@ -201,9 +202,9 @@ export default function DedicatedApplyNowPage() {
             <form onSubmit={handleApply} className="space-y-8">
               {/* SECTION 1 */}
               <div className="space-y-4">
-                <h3 className="text-xs font-bold text-[#004d40] uppercase tracking-wider border-b border-[#e2e8f0] pb-2">
+                <TextEffect as="h3" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-xs font-bold text-[#004d40] uppercase tracking-wider border-b border-[#e2e8f0] pb-2">
                   1. STUDENT INFORMATION
-                </h3>
+                </TextEffect>
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
@@ -271,9 +272,9 @@ export default function DedicatedApplyNowPage() {
 
               {/* SECTION 2 */}
               <div className="space-y-4">
-                <h3 className="text-xs font-bold text-[#004d40] uppercase tracking-wider border-b border-[#e2e8f0] pb-2">
+                <TextEffect as="h3" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-xs font-bold text-[#004d40] uppercase tracking-wider border-b border-[#e2e8f0] pb-2">
                   2. PARENT / GUARDIAN DETAILS
-                </h3>
+                </TextEffect>
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
@@ -381,9 +382,9 @@ export default function DedicatedApplyNowPage() {
                 <span>Submit Application & Apply For Admission</span>
               </button>
 
-              <p className="text-[11px] text-center text-[#64748b]">
+              <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-[11px] text-center text-[#64748b]">
                 Form submissions are automatically forwarded to Nabi Crescent Matriculation School WhatsApp helpline (+91 44 4378 0320).
-              </p>
+              </TextEffect>
             </form>
           )}
         </div>

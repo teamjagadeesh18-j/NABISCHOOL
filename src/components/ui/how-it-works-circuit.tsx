@@ -1,4 +1,5 @@
 "use client";
+import { TextEffect } from '@/components/core/text-effect';
 
 import React, { useRef } from "react";
 import { LazyMotion, domAnimation, m, useInView } from "framer-motion";
@@ -72,8 +73,8 @@ function ChipCard({ step, index, up }: { step: CircuitStep; index: number; up: b
           <span className="text-[10px] font-bold tracking-widest" style={{ color: PULSE }}>
             0{index + 1}
           </span>
-          <h3 className="text-xs font-bold text-white mt-1 leading-snug">{step.title}</h3>
-          <p className="text-slate-300 text-[10px] mt-1 leading-relaxed font-normal">{step.description}</p>
+          <TextEffect as="h3" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-xs font-bold text-white mt-1 leading-snug">{step.title}</TextEffect>
+          <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-slate-300 text-[10px] mt-1 leading-relaxed font-normal">{step.description}</TextEffect>
         </div>
       </m.div>
     </div>
@@ -100,10 +101,10 @@ export default function HowItWorksCircuit({
         />
 
         <div className="max-w-xl mx-auto text-center mb-8 relative z-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-white">{title}</h2>
-          <p className="mt-2 text-sm text-[#cdface]/80">
+          <TextEffect as="h2" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-2xl md:text-3xl font-bold text-white">{title}</TextEffect>
+          <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="mt-2 text-sm text-[#cdface]/80">
             {subtitle}
-          </p>
+          </TextEffect>
         </div>
 
         <div ref={ref} className="relative max-w-5xl mx-auto overflow-x-auto pb-4 scrollbar-thin z-10">

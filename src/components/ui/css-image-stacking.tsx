@@ -1,4 +1,5 @@
 "use client";
+import { TextEffect } from '@/components/core/text-effect';
 import React, { useState } from "react";
 
 export default function CssImageStacking() {
@@ -18,12 +19,12 @@ export default function CssImageStacking() {
         <span className="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-100 text-emerald-800 border border-emerald-300 font-body">
           AVADI CAMPUS FOCAL SHOWCASE
         </span>
-        <h2 className="text-3xl sm:text-5xl font-extrabold text-[#064e3b] mt-4 font-heading leading-tight">
+        <TextEffect as="h2" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-3xl sm:text-5xl font-extrabold text-[#064e3b] mt-4 font-heading leading-tight">
           Explore Campus Life at Nabi Crescent
-        </h2>
-        <p className="text-emerald-800/80 text-base sm:text-lg mt-3 font-body">
+        </TextEffect>
+        <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-emerald-800/80 text-base sm:text-lg mt-3 font-body">
           Click through our interactive campus spotlight stages.
-        </p>
+        </TextEffect>
       </div>
 
       <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-10 items-center">
@@ -41,11 +42,11 @@ export default function CssImageStacking() {
                 </span>
                 <span className="text-xs text-slate-400 font-mono">0{idx + 1} / 0{items.length}</span>
               </div>
-              <h3 className="text-lg font-bold text-[#064e3b] font-heading mt-1">{item.title}</h3>
+              <TextEffect as="h3" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-lg font-bold text-[#064e3b] font-heading mt-1">{item.title}</TextEffect>
               {active === idx && (
-                <p className="text-xs text-emerald-800/80 font-body mt-2 leading-relaxed">
+                <TextEffect as="p" preset="fade-in-blur" speedReveal={1.1} speedSegment={0.3} className="text-xs text-emerald-800/80 font-body mt-2 leading-relaxed">
                   {item.text}
-                </p>
+                </TextEffect>
               )}
             </div>
           ))}
